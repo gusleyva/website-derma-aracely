@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #b88a8f;
+  --secondary: #dcb7b9;
+  --text: #4e3a3c;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+/***** Base tweaks *****/
+* { box-sizing: border-box; }
+
+/***** Typography *****/
+body {
+  color: var(--text);
+}
