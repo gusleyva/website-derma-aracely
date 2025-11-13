@@ -1,20 +1,51 @@
 ---
 // Header.astro
+import Icon from "astro-icon";
 ---
 
 <header class="w-full fixed bg-white/90 backdrop-blur-md z-50 shadow-sm">
   <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
     <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-[var(--primary)] flex items-center justify-center text-white font-semibold">
-        AC
+      <div class="w-10 h-10 rounded-full overflow-hidden bg-[var(--primary)] flex items-center justify-center">
+        <img 
+          src="/imgs/logo-01.png" 
+          alt="Logo Dra. Aracely Castillo" 
+          class="w-full h-full object-cover"
+        />
       </div>
       <span class="font-semibold text-lg">Dra. Aracely Castillo</span>
     </div>
-    <a 
-      href="#contacto" 
-      class="px-4 py-2 rounded-lg bg-[var(--primary)] text-white hover:opacity-90 transition"
-    >
-      Agenda tu cita
-    </a>
+    
+    <!-- Menú + Botón + Redes -->
+    <div class="flex items-center gap-6">
+      <!-- Menú de navegación -->
+      <nav class="hidden md:flex items-center gap-4 font-medium text-gray-700">
+        <a href="#sobre" class="hover:text-[var(--primary)] transition">Acerca de</a>
+        <a href="#servicios" class="hover:text-[var(--primary)] transition">Servicios</a>
+        <a href="#contacto" class="hover:text-[var(--primary)] transition">Contacto</a>
+      </nav>
+
+      <!-- Botón principal -->
+      <a 
+        href="#contacto" 
+        class="px-4 py-2 rounded-lg bg-[var(--primary)] text-white hover:opacity-90 transition"
+      >
+        Agenda tu cita
+      </a>
+
+      <!-- Icono de Instagram -->
+      <a 
+        href="https://www.instagram.com/dermatologa.aracelycastillo" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-[var(--primary)] transition"
+      >
+        <img 
+          src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/instagram.svg" 
+          alt="Instagram"
+          class="w-6 h-6"
+        />
+      </a>
+    </div>
   </nav>
 </header>
