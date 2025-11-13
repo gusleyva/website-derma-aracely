@@ -4,8 +4,9 @@ import Icon from "astro-icon";
 ---
 
 <header class="w-full fixed bg-white/90 backdrop-blur-md z-50 shadow-sm">
-  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-    <div class="flex items-center gap-2">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4">
+    <!-- Logo + Nombre -->
+    <div class="flex items-center gap-2 sm:gap-3">
       <div class="w-10 h-10 rounded-full overflow-hidden bg-[var(--primary)] flex items-center justify-center">
         <img 
           src="/imgs/logo-01.png" 
@@ -13,11 +14,11 @@ import Icon from "astro-icon";
           class="w-full h-full object-cover"
         />
       </div>
-      <span class="font-semibold text-lg">Dra. Aracely Castillo</span>
+      <span class="font-semibold text-base sm:text-lg whitespace-nowrap">Dra. Aracely Castillo</span>
     </div>
     
     <!-- Menú + Botón + Redes -->
-    <div class="flex items-center gap-6">
+    <div class="flex items-center gap-2 sm:gap-6">
       <!-- Menú de navegación -->
       <nav class="hidden md:flex items-center gap-4 font-medium text-gray-700">
         <a href="#sobre" class="hover:text-[var(--primary)] transition">Acerca de</a>
@@ -28,7 +29,7 @@ import Icon from "astro-icon";
       <!-- Botón principal -->
       <a 
         href="#contacto" 
-        class="px-4 py-2 rounded-lg bg-[var(--primary)] text-white hover:opacity-90 transition"
+        class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[var(--primary)] text-white text-sm sm:text-base hover:opacity-90 transition whitespace-nowrap"
       >
         Agenda tu cita
       </a>
@@ -38,12 +39,12 @@ import Icon from "astro-icon";
         href="https://www.instagram.com/dermatologa.aracelycastillo" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="text-gray-600 hover:text-[var(--primary)] transition"
+        class="text-gray-600 hover:text-[var(--primary)] transition flex items-center"
       >
         <img 
           src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/instagram.svg" 
           alt="Instagram"
-          class="w-6 h-6"
+          class="w-5 h-5 sm:w-6 sm:h-6"
         />
       </a>
     </div>
